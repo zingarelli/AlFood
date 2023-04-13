@@ -68,15 +68,15 @@ O Docker roda por trás uma micro máquina virtual Linux. Quando você "sobe" um
 
 - Após a instalação, caso o Docker exiba uma janela informando que é necessário uma atualização do WSL, siga as instruções do link informado na janela e baixe um arquivo de instalação (a janela dá outra opção, que é rodando o comando `wsl --update`, mas não deu certo dessa forma - após o comando, aguardei por mais de 1 hora e nada aconteceu).
 
-Após a instalação, são necessários rodar dois comandos. O primeiro irá instalar tudo que é necessário para rodar a aplicação:
+Depois de instalado, para rodar a API é necessário abrir um terminal, ir até a pasta `api` deste projeto e rodar dois comandos. O primeiro irá instalar tudo que é necessário para rodar o back-end:
 
     docker-compose build
 
-O segundo é o que utilizamos para colocar a aplicação no ar:
+O segundo é o que utilizamos para colocar a API no ar:
 
     docker-compose up
 
-A API irá rodar no link **http://localhost:8000**. Nesta página podemos ver o chamado "Swagger", uma ferramenta que auxilia a desenvolver e documentar APIs. No caso do Alfood, ele irá mostrar os verbos e endpoints disponibilizados pela API, e também irá possibilitar testar chamadas e ver o resultado. Parece ser semelhante ao que o Postman faz.
+A API será acessível no link **http://localhost:8000**. Nesta página podemos ver o chamado "Swagger", uma ferramenta que auxilia a desenvolver e documentar APIs. No caso do Alfood, ele irá mostrar os verbos e endpoints disponibilizados pela API, e também irá possibilitar testar chamadas e ver o resultado. Parece ser semelhante ao que o Postman faz.
 
 ## O que eu aprendi ✔️
 
@@ -303,7 +303,7 @@ The app will run at **http://localhost:3000**.
 
 You need to install Docker: here are the instructions to [download and install Docker Desktop on Windows](https://www.docker.com/products/docker-desktop/).
 
-After having installed it, navigate to the `api` folder and run the following commands to build and create the container for the API:
+After having installed it, open a terminal, navigate to the folder `api` of this project and run the following commands to build and create the container for the API:
 
     docker-compose build
 
